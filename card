@@ -1,0 +1,44 @@
+//给每个人随机发牌
+func dividecards(card_num:Int ,people_num:Int){
+    var cardstack = [1:"card1"]
+    for i in 2...card_num{
+      cardstack[i] = "card\(i)"
+    }
+    var num = card_num / people_num
+    var k = 0
+    var people_id = 2
+    print("people1's")
+    for i in cardstack{
+        if k>=num {
+            print("people\(people_id)'s")
+            people_id = people_id + 1
+            k = k - num
+        }
+        k = k+1
+        print(i)
+    }
+    //print(cardstack)
+    //return cardstack
+}
+
+dividecards(card_num:52, people_num: 4)
+print("======")
+dividecards(card_num:52, people_num: 13)
+// 随机返回一张牌
+func firstcard(card_num:Int)->(Int,String){
+    var cardstack = [1:"card1"]
+    for i in 2...card_num{
+        cardstack[i] = "card\(i)"
+    }
+    //print(cardstack)
+    //return cardstack
+    for i in cardstack{
+        return i
+    }
+    var nullcard = (1,"1")
+    return nullcard
+}
+
+print(firstcard(card_num:10))
+print(firstcard(card_num:10))
+print(firstcard(card_num:10))
