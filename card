@@ -17,10 +17,8 @@ func dividecards(card_num:Int ,people_num:Int){
         k = k+1
         print(i)
     }
-    //print(cardstack)
-    //return cardstack
 }
-
+//给4个人和13个人发52张牌的展示
 dividecards(card_num:52, people_num: 4)
 print("======")
 dividecards(card_num:52, people_num: 13)
@@ -38,7 +36,7 @@ func firstcard(card_num:Int)->(Int,String){
     var nullcard = (1,"1")
     return nullcard
 }
-
+//10张牌里抽一张的展示
 print(firstcard(card_num:10))
 print(firstcard(card_num:10))
 print(firstcard(card_num:10))
