@@ -4,7 +4,7 @@ func dividecards(card_num:Int ,people_num:Int){
     for i in 2...card_num{
       cardstack[i] = "card\(i)"
     }
-    var num = card_num / people_num
+    let num = card_num / people_num
     var k = 0
     var people_id = 2
     print("people1's")
@@ -33,7 +33,7 @@ func firstcard(card_num:Int)->(Int,String){
     for i in cardstack{
         return i
     }
-    var nullcard = (1,"1")
+    lets nullcard = (1,"1")
     return nullcard
 }
 //10张牌里抽一张的展示
